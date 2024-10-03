@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Carga de React y ReactDOM desde un CDN -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- Carga de Babel para permitir la escritura de JSX -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>ReactApp</title> <!-- Título de la página -->
+</head>
+<body>
+    <div id="root"></div> <!-- Contenedor donde se renderizará el componente React -->
+
+    <script type="text/babel"> //Indica que el script usará Babel para compilar JSX
+        const divRoot = document.querySelector('#root'); // Selecciona el contenedor root
+        const nombre = "Alan";
+        const h1Tag = <h1>Hola!, soy {nombre}</h1>; // Crea un elemento h1 usando JSX
+        ReactDOM.render(h1Tag, divRoot); // Renderiza el elemento h1 dentro del contenedor root
+    </script>
+</body>
+</html>
