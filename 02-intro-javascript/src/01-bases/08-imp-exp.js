@@ -1,4 +1,4 @@
-import heroes, {owners} from "./data/heroes"; //desestructuramos owners xq no es default
+import heroes from "../data/heroes";
 //Import y export
 /*const getHeroeByID = (id) => {
     return heroes.find((heroe) => {
@@ -10,12 +10,14 @@ import heroes, {owners} from "./data/heroes"; //desestructuramos owners xq no es
     });
 } */
 
-    console.log(owners)
+//console.log(owners)
 //Obtener heroe por id
 const getHeroeByID = (id) => heroes.find((heroe) => heroe.id === id);
-console.log(getHeroeByID(2));
+//console.log(getHeroeByID(2));
 
 //obtener lista de heroes por dueño
 const getHeroeByOwner = (owner) => heroes.filter((heroe) => heroe.owner === owner);
 
-console.log(getHeroeByOwner('DC'))
+//console.log(getHeroeByOwner('DC'))
+
+export {getHeroeByID as default, getHeroeByOwner}
