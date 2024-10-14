@@ -2,7 +2,10 @@ import React from 'react'
 
 const FirstApp = () => {
   return (
-    <h1>First App</h1>
+    <>//Fragment, para que funcione nuestro componente
+      <h1>First App</h1>
+      <p>Soy un subtitulo</p>
+    </>
   )
 }
 
