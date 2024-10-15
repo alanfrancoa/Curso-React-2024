@@ -5,6 +5,6 @@ import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <FirstApp/>
+        <FirstApp title='Club Classic' subtitle={365}/> {/* Para pasar numeros lo hacemos con llaves */}
     </React.StrictMode>
 )

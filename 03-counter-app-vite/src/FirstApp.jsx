@@ -1,17 +1,18 @@
 import React from 'react'
 
 
-const getResult = (a, b) => a+b;
+{/*Podemos establecer los valores por defecto. */}
 
-
-const FirstApp = () => {
+const FirstApp = ({title = 'Hola, soy Alan.', subtitle}) => {
+  
+  //console.log(props)
 
   return ( //Fragment, para que funcione nuestro componente
     <>
 
-      <h1>{getResult(666, 1)}</h1>
+      <h1>{title}</h1>
       {/*<code>{ JSON.stringify(newMessage)}</code> */}
-      <p>Soy un subtitulo</p>
+      <p>{subtitle + 1}</p>
     </>
 
     //Podemos utilizar un JSON.stringify(objeto), si queremos mostrar todo el objeto.
