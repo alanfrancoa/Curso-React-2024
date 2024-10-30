@@ -60,5 +60,7 @@ describe('Test de 08-imp-exp.js', () => {
             { id: 2, name: 'Spiderman', owner: 'Marvel' },
             { id: 5, name: 'Wolverine', owner: 'Marvel' }
         ])
+
+        expect(listaHeroes).toEqual(heroes.filter((heroe) => heroe.owner === owner));
     })
 })
